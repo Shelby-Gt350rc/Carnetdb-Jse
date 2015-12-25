@@ -5,7 +5,7 @@
 */
 package com.shelby.carnet.interfacesUtils;
 
-
+ 
 import com.shelby.carnet.CarnetApp;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -190,7 +190,7 @@ public class LoginGui extends javax.swing.JFrame {
             }
         });
         getContentPane().add(exitLbl);
-        exitLbl.setBounds(430, 0, 0, 0);
+        exitLbl.setBounds(430, 0, 16, 16);
 
         infosLbl.setFont(new java.awt.Font("LM Roman Dunhill 10", 2, 14)); // NOI18N
         infosLbl.setForeground(new java.awt.Color(250, 243, 243));
@@ -199,14 +199,14 @@ public class LoginGui extends javax.swing.JFrame {
         getContentPane().add(infosLbl);
         infosLbl.setBounds(100, 180, 160, 20);
 
-        logoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/shelby/carnet/interfacesUtils/resources/aboutCarnetdb.png"))); // NOI18N
+        logoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/shelby/carnet/security/login/resources/aboutCarnetdb.png"))); // NOI18N
         logoLbl.setText(resourceMap.getString("logoLbl.text")); // NOI18N
         logoLbl.setName("logoLbl"); // NOI18N
         getContentPane().add(logoLbl);
         logoLbl.setBounds(10, 20, 140, 170);
 
         fondLoginLbl.setFont(new java.awt.Font("Palatino Linotype", 0, 12)); // NOI18N
-        fondLoginLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/shelby/carnet/interfacesUtils/resources/fondLogin.jpg"))); // NOI18N
+        fondLoginLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/shelby/carnet/security/login/fondLogin.jpg"))); // NOI18N
         fondLoginLbl.setName("fondLoginLbl"); // NOI18N
         getContentPane().add(fondLoginLbl);
         fondLoginLbl.setBounds(0, 0, 450, 250);
@@ -265,6 +265,7 @@ public class LoginGui extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(LoginGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
         
         /* Create and display the form */
