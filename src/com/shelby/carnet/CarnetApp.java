@@ -4,6 +4,7 @@
 
 package com.shelby.carnet;
 
+import com.shelby.carnet.interfacesUtils.LoginGui;
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
 
@@ -11,6 +12,11 @@ import org.jdesktop.application.SingleFrameApplication;
  * The main class of the application.
  */
 public class CarnetApp extends SingleFrameApplication {
+
+    private static void authentification() {
+        LoginGui monLogin = new LoginGui();
+        monLogin.setVisible(true);    
+    }
 
     /**
      * At startup create and show the main frame of the application.
@@ -39,10 +45,15 @@ public class CarnetApp extends SingleFrameApplication {
      * Main method launching the application.
      */
     public static void main(String[] args) {
-        launch(CarnetApp.class, args);
+     authentification();
+        arg=args;
     }
-
+    
+    public  static String[] arg;
+    /**
+     * Methode qui lance notre application.
+     */
     public void runApp() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        launch(CarnetApp.class, arg);
     }
 }
